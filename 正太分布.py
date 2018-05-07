@@ -36,13 +36,13 @@ def inverfsampling(mu=0, sigma=1, size=1):
     return mu+z*sigma
 
 if __name__ == '__main__':
-    total = 10000 #所分总金额
+    total = 100 #所分总金额
     num = 500 #拆分红包.
     num_bins = 50
     average = float(total) / float(num) #平均数
-    min = 0.5 #最小值
+    min = 0.01 #最小值
     total = total - min * num
-    sigma = 30 #标准差
+    sigma = 0.15 #标准差
     nums = []
     for i in range(0,num):
         result  = total
